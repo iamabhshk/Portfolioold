@@ -6,7 +6,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--dark-color); }
+  background-color: var(--dark-color);
+  transition: top 0.3s; }
   @media only screen and (max-width: 600px) {
     .header {
       width: 100%; } }
@@ -47,6 +48,9 @@
       color: #f8eded;
       font-size: 0.9rem;
       transition: all 0.2s; }
+      @media only screen and (max-width: 600px) {
+        .header-navigation-link {
+          flex: 0 0 0%; } }
       @media only screen and (max-width: 1200px) {
         .header-navigation-link {
           font-size: 1.6rem; } }
@@ -66,7 +70,7 @@
       height: inherit; } }
   @media only screen and (max-width: 900px) {
     .firstPage {
-      height: inherit; } }
+      height: 105vh; } }
   @media only screen and (max-width: 600px) {
     .firstPage {
       height: inherit; } }
@@ -196,7 +200,8 @@
 
 .secondPage {
   display: flex;
-  background-color: var(--light-color); }
+  background-color: var(--light-color);
+  overflow: hidden; }
   @media only screen and (max-width: 600px) {
     .secondPage {
       flex-direction: column; } }
@@ -249,8 +254,8 @@
           width: 60%; } }
       @media only screen and (max-width: 600px) {
         .secondPage-about-image {
-          height: 55%;
-          width: 30%; } }
+          height: 65%;
+          width: 25%; } }
   .secondPage-main {
     font-size: 1.1rem;
     color: var(--dark-color);
@@ -361,7 +366,7 @@
       height: inherit; } }
   @media only screen and (max-width: 600px) {
     .thirdPage {
-      height: inherit; } }
+      height: 150vh; } }
   .thirdPage-heading {
     color: var(--primary-color);
     margin-left: 5rem;
@@ -421,7 +426,8 @@
           font-size: 1.8rem; } }
       @media only screen and (max-width: 600px) {
         .thirdPage-main-skill > * {
-          font-size: 1.8rem; } }
+          font-size: 1.8rem;
+          display: none; } }
       .thirdPage-main-skill > *:hover {
         transform: scale(1.1);
         color: var(--light-color); }
@@ -430,6 +436,9 @@
       bottom: 2rem;
       color: rgba(0, 255, 255, 0.788);
       font-size: 0.6rem; }
+      @media only screen and (max-width: 600px) {
+        .thirdPage-main-skill-1 {
+          left: inherit; } }
     .thirdPage-main-skill-2 {
       left: 10rem;
       bottom: 7rem;
@@ -607,8 +616,11 @@
         height: 4rem;
         border-radius: 50%; }
       .fourthPage-main-project-name {
-        font-size: 1.2rem;
-        font-weight: 600; }
+        font-size: 0.8rem;
+        font-weight: 400;
+        color: var(--dark-color);
+        font-weight: 700;
+        text-transform: uppercase; }
         @media only screen and (max-width: 1200px) {
           .fourthPage-main-project-name {
             font-size: 1.7rem;
@@ -695,12 +707,16 @@
     transform: translateY(0.3rem); }
 
 .fifthPage {
-  height: inherit;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
   background-color: var(--light-color);
   color: var(--dark-color); }
+  @media only screen and (max-width: 600px) {
+    .fifthPage {
+      height: 70vh; } }
   .fifthPage-touch {
     font-size: 2rem;
     color: var(--primary-color);
@@ -743,13 +759,12 @@
     padding: 2rem; }
 
 .footer {
-  height: 50vh;
+  height: 60vh;
   background-color: var(--dark-color);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  flex: 0 0 100%; }
+  justify-content: space-around; }
   @media only screen and (max-width: 600px) {
     .footer {
       height: inherit; } }
@@ -767,9 +782,13 @@
     font-size: 0.8rem; }
     @media only screen and (max-width: 600px) {
       .footer-credit {
-        font-size: 1rem; } }
+        font-size: 1rem;
+        line-height: 2rem;
+        width: 80%; } }
     .footer-credit-name {
       color: var(--primary-color); }
+      .footer-credit-name:hover {
+        color: #00a2ff; }
       @media only screen and (max-width: 600px) {
         .footer-credit-name {
           font-size: 1.6rem; } }
