@@ -1,0 +1,31 @@
+// @mixin clearfix {
+//   content: "";
+//   display: table;
+//   clear: both;
+// }
+
+// MEDIA QUERY MANGER
+/*
+  0-600px: Phone
+  600-900px: Tablet Potrait
+  900-1200px: Tablet LandScape
+  [1200-1800] is where our normal style applies
+  1800+: Big Desktop
+  
+  $breakpoint arguement choices:
+  -Phone
+  -tab-port
+  -tab-land    
+  -big-desktop
+  
+  Order: Base + Typography > Genral Layout + Grid > Page layout > Components
+  
+  1em = 16px
+  */
+
+// @mixin respond($breakpoint) {
+//     @if $breakpoint == image{
+//         @media (min-resolution: 192dpi) and (min-width: 60px){@content};
+//     }
+
+// }
