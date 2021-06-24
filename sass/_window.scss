@@ -320,6 +320,7 @@
       justify-content: space-around;
       background-color: var(--dark-color);
       flex: 0 0 25%;
+      height: 25vh;
     }
 
     &-me {
@@ -359,8 +360,10 @@
         width: 60%;
       }
       @include change(phone) {
-        height: 65%;
-        width: 25%;
+        height: 75%;
+        width: 30%;
+        // height: 65%;
+        // width: 20%;
       }
     }
   }
@@ -509,7 +512,7 @@
   }
 
   @include change(phone) {
-    height: 150vh;
+    height: 147vh;
   }
 
   color: var(--light-color);
@@ -955,7 +958,7 @@
   background-color: var(--light-color);
   color: var(--dark-color);
   @include change(phone) {
-    height: 70vh;
+    height: 35vh;
   }
   &-touch {
     font-size: 2rem;
@@ -1015,7 +1018,7 @@
   justify-content: space-around;
 
   @include change(phone) {
-    height: inherit;
+    height: 20vh;
   }
 
   &-image {

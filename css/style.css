@@ -222,7 +222,8 @@
         flex-direction: row;
         justify-content: space-around;
         background-color: var(--dark-color);
-        flex: 0 0 25%; } }
+        flex: 0 0 25%;
+        height: 25vh; } }
     .secondPage-about-me {
       margin-top: 7rem;
       color: var(--primary-color); }
@@ -254,8 +255,8 @@
           width: 60%; } }
       @media only screen and (max-width: 600px) {
         .secondPage-about-image {
-          height: 65%;
-          width: 25%; } }
+          height: 75%;
+          width: 30%; } }
   .secondPage-main {
     font-size: 1.1rem;
     color: var(--dark-color);
@@ -366,7 +367,7 @@
       height: inherit; } }
   @media only screen and (max-width: 600px) {
     .thirdPage {
-      height: 150vh; } }
+      height: 147vh; } }
   .thirdPage-heading {
     color: var(--primary-color);
     margin-left: 5rem;
@@ -716,7 +717,7 @@
   color: var(--dark-color); }
   @media only screen and (max-width: 600px) {
     .fifthPage {
-      height: 70vh; } }
+      height: 35vh; } }
   .fifthPage-touch {
     font-size: 2rem;
     color: var(--primary-color);
@@ -767,7 +768,7 @@
   justify-content: space-around; }
   @media only screen and (max-width: 600px) {
     .footer {
-      height: inherit; } }
+      height: 20vh; } }
   .footer-image {
     margin-top: 2rem;
     height: 40%;
