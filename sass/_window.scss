@@ -158,9 +158,6 @@
         }
         &-mark {
           color: var(--primary-color);
-
-          &:hover {
-          }
         }
       }
 
@@ -362,8 +359,6 @@
       @include change(phone) {
         height: 75%;
         width: 30%;
-        // height: 65%;
-        // width: 20%;
       }
     }
   }
