@@ -44,7 +44,7 @@
       margin-left: 10rem;
 
       animation: right 2s;
-      animation-delay: 0.8s;
+      animation-delay: 0.2s;
       animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
 
@@ -67,7 +67,7 @@
     justify-content: space-around;
 
     animation: lower 2s;
-    animation-delay: 0.8s;
+    animation-delay: 0.2s;
     animation-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
 
     @include change(tab-land) {
@@ -158,7 +158,7 @@
         color: var(--light-color);
 
         animation: upper 2s;
-        animation-delay: 0.8s;
+        animation-delay: 0.2s;
         animation-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
 
         @include change(tab-land) {
@@ -182,7 +182,7 @@
         color: var(--light-color);
 
         animation: left 2s;
-        animation-delay: 0.8s;
+        animation-delay: 0.2s;
         animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
 
         @include change(tab-land) {
@@ -209,7 +209,7 @@
         margin-top: 0.3rem;
 
         animation: right 2s;
-        animation-delay: 0.8s;
+        animation-delay: 0.2s;
         animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
         @include change(tab-land) {
@@ -253,7 +253,7 @@
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.623);
 
         animation: lower 2s;
-        animation-delay: 0.8s;
+        animation-delay: 0.2s;
         animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
 
         @include change(tab-land) {
@@ -286,7 +286,7 @@
         margin-top: 5rem;
 
         animation: links 2s;
-        animation-delay: 0.8s;
+        animation-delay: 0.2s;
         animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
 
         @include change(tab-port) {
@@ -308,7 +308,7 @@
         height: 31rem;
 
         animation: upper 2s;
-        animation-delay: 0.8s;
+        animation-delay: 0.2s;
         animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
 
         @include change(tab-land) {
