@@ -74,6 +74,7 @@
       height: 5rem;
       align-items: center;
       justify-content: space-around;
+      margin-left: 1rem;
     }
 
     &-link {
@@ -402,7 +403,7 @@
         font-size: 1.6rem;
 
         flex: 0 0 100%;
-        margin-right: 3rem;
+        margin-right: 2rem;
         margin-left: -1rem;
       }
 
@@ -508,7 +509,7 @@
   }
 
   @include change(phone) {
-    height: 147vh;
+    height: inherit;
   }
 
   color: var(--light-color);
@@ -717,6 +718,8 @@
             font-size: 3rem;
             letter-spacing: 0.2rem;
             word-spacing: 0.6rem;
+
+            font-size: 2rem;
           }
         }
       }
@@ -782,7 +785,7 @@
         font-size: 2.2rem;
       }
       @include change(phone) {
-        font-size: 2.4rem;
+        font-size: 2.8rem;
       }
 
       &:hover {
@@ -969,7 +972,8 @@
       font-size: 2.4rem;
     }
     @include change(phone) {
-      font-size: 2.5rem;
+      font-size: 4rem;
+      font-weight: 700;
     }
   }
   &-text {
