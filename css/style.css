@@ -14,7 +14,10 @@
   .header-logo {
     display: flex;
     width: 5%;
-    margin-left: 10rem; }
+    margin-left: 10rem;
+    animation: right 2s;
+    animation-delay: 0.8s;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); }
     @media only screen and (max-width: 600px) {
       .header-logo {
         margin-left: 1.4rem;
@@ -28,7 +31,10 @@
   .header-navigation {
     display: flex;
     flex: 0 0 45%;
-    justify-content: space-around; }
+    justify-content: space-around;
+    animation: lower 2s;
+    animation-delay: 0.8s;
+    animation-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035); }
     @media only screen and (max-width: 1200px) {
       .header-navigation {
         flex: 0 0 50%;
@@ -95,7 +101,10 @@
           line-height: 5rem; } }
       .firstPage-main-about-hi {
         font-size: 0.9rem;
-        color: var(--light-color); }
+        color: var(--light-color);
+        animation: upper 2s;
+        animation-delay: 0.8s;
+        animation-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035); }
         @media only screen and (max-width: 1200px) {
           .firstPage-main-about-hi {
             font-size: 1.8rem; } }
@@ -109,7 +118,10 @@
           color: var(--primary-color); }
       .firstPage-main-about-abhishek {
         font-size: 3rem;
-        color: var(--light-color); }
+        color: var(--light-color);
+        animation: left 2s;
+        animation-delay: 0.8s;
+        animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86); }
         @media only screen and (max-width: 1200px) {
           .firstPage-main-about-abhishek {
             font-size: 4.2rem; } }
@@ -126,7 +138,10 @@
       .firstPage-main-about-text {
         color: var(--light-color);
         font-size: 1.3rem;
-        margin-top: 0.3rem; }
+        margin-top: 0.3rem;
+        animation: right 2s;
+        animation-delay: 0.8s;
+        animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); }
         @media only screen and (max-width: 1200px) {
           .firstPage-main-about-text {
             font-size: 2rem; } }
@@ -156,7 +171,10 @@
         margin-top: 20px;
         border: none;
         transition: all 0.4s;
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.623); }
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.623);
+        animation: lower 2s;
+        animation-delay: 0.8s;
+        animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86); }
         @media only screen and (max-width: 1200px) {
           .firstPage-main-about-btn {
             padding: 1.6rem;
@@ -176,7 +194,10 @@
           transform: translateY(0.3rem); }
       .firstPage-main-about-links {
         display: flex;
-        margin-top: 5rem; }
+        margin-top: 5rem;
+        animation: links 2s;
+        animation-delay: 0.8s;
+        animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1); }
         @media only screen and (max-width: 900px) {
           .firstPage-main-about-links {
             margin-top: 7rem; } }
@@ -188,7 +209,10 @@
             margin-top: 5rem; } }
     .firstPage-main-photo-image {
       margin-top: 5rem;
-      height: 31rem; }
+      height: 31rem;
+      animation: upper 2s;
+      animation-delay: 0.8s;
+      animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86); }
       @media only screen and (max-width: 1200px) {
         .firstPage-main-photo-image {
           height: 41rem; } }
@@ -773,6 +797,12 @@
   @media only screen and (max-width: 600px) {
     .footer {
       height: 20vh; } }
+  @media only screen and (max-width: 1200px) {
+    .footer {
+      height: inherit; } }
+  @media only screen and (max-width: 900px) {
+    .footer {
+      height: inherit; } }
   .footer-image {
     margin-top: 2rem;
     height: 40%;
@@ -846,3 +876,44 @@ html {
       height: 1.6rem; } }
   .icon:hover {
     transform: scale(1.5); }
+
+@keyframes upper {
+  0% {
+    transform: translateY(-5rem); }
+  50% {
+    transform: translateY(2rem); }
+  100% {
+    transform: translateY(0rem); } }
+
+@keyframes left {
+  0% {
+    transform: translateX(-5rem); }
+  50% {
+    transform: translateX(2rem); }
+  100% {
+    transform: translateX(0rem); } }
+
+@keyframes right {
+  0% {
+    transform: translateX(5rem); }
+  50% {
+    transform: translateX(-2rem); }
+  100% {
+    transform: translateX(0rem); } }
+
+@keyframes lower {
+  0% {
+    transform: translateY(5rem);
+    display: none; }
+  50% {
+    transform: translateY(-2rem); }
+  100% {
+    transform: translateY(0rem); } }
+
+@keyframes links {
+  0% {
+    transform: translateX(65rem); }
+  50% {
+    transform: translateX(-2rem); }
+  100% {
+    transform: translateX(0rem); } }
