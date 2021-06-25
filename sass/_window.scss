@@ -390,7 +390,7 @@
     @include change(phone) {
       font-size: 1.7rem;
       flex: 0 0 100%;
-      text-align: center;
+      text-align: left;
     }
 
     &-textArea {
@@ -398,11 +398,12 @@
 
       @include change(phone) {
         justify-content: left;
-        text-align: center;
+        text-align: left;
         font-size: 1.6rem;
 
         flex: 0 0 100%;
-        margin-left: -5rem;
+        margin-right: 3rem;
+        margin-left: -1rem;
       }
 
       &-para1 {
