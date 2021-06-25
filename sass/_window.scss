@@ -37,13 +37,16 @@
   }
 
   &-logo {
-    display: flex;
-    width: 5%;
-    margin-left: 10rem;
+    &-img {
+      width: 15%;
+      display: flex;
 
-    animation: right 2s;
-    animation-delay: 0.8s;
-    animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      margin-left: 10rem;
+
+      animation: right 2s;
+      animation-delay: 0.8s;
+      animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
 
     @include change(phone) {
       margin-left: 1.4rem;
@@ -51,10 +54,10 @@
     }
 
     @include change(tab-land) {
-      width: 5%;
+      width: 45%;
     }
     @include change(tab-port) {
-      width: 5%;
+      width: 45%;
     }
   }
 
