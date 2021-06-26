@@ -851,6 +851,10 @@
   margin: 0;
   padding: 0; }
 
+::selection {
+  color: var(--dark-color);
+  background-color: var(--primary-color); }
+
 body {
   font-family: "Nunito", sans-serif; }
   @media only screen and (max-width: 900px) {
