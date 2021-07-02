@@ -92,7 +92,7 @@
       text-decoration: none;
       color: #f8eded;
       font-size: 0.9rem;
-      transition: all 0.2s;
+      transition: all 0.3s;
 
       @include change(phone) {
         flex: 0 0 0%;
@@ -399,6 +399,7 @@
         var(--primary-color),
         rgb(3, 93, 145)
       );
+      transition: all 0.4s;
       -webkit-background-clip: text;
       color: transparent;
 
@@ -423,7 +424,7 @@
       margin-top: 2rem;
       border-radius: 50%;
       height: 25%;
-      width: 50%;
+      width: 45%;
 
       @include change(tab-land) {
         height: 35%;
@@ -435,7 +436,7 @@
         width: 60%;
       }
       @include change(phone) {
-        height: 75%;
+        height: 80%;
         width: 30%;
       }
     }
@@ -677,6 +678,8 @@
           var(--primary-color),
           rgb(3, 93, 145)
         );
+
+        transition: all 0.4s;
         -webkit-background-clip: text;
         color: transparent;
         @include change(tab-land) {
@@ -786,6 +789,7 @@
           );
           -webkit-background-clip: text;
           color: transparent;
+          transition: all 0.3s;
 
           &:hover {
             color: var(--light-color);
@@ -815,6 +819,7 @@
         line-height: 2rem;
 
         & > * {
+          transition: all 0.3s;
           &:hover {
             background-image: linear-gradient(
               to right bottom,
@@ -869,6 +874,7 @@
         var(--primary-color),
         rgb(3, 93, 145)
       );
+      transition: all 0.4s;
       -webkit-background-clip: text;
       color: transparent;
       font-size: 1.8rem;
