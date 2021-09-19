@@ -20,6 +20,22 @@
     }
   }
 }
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+  @include change(tab-land) {
+    font-size: 56.25%;
+  }
+
+  @include change(tab-port) {
+    font-size: 50%;
+  }
+
+  @include change(big-desktop) {
+    font-size: 75%;
+  }
+}
 
 .header {
   position: fixed;
