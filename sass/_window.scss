@@ -867,8 +867,7 @@ html {
 .fourthPage {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  height: 100vh;
+  height: 170vh;
   background-color: var(--dark-color);
 
   @include change(tab-land) {
@@ -879,6 +878,7 @@ html {
   }
   @include change(phone) {
     height: inherit;
+    flex-direction: column;
   }
 
   &-heading {
@@ -890,141 +890,171 @@ html {
         var(--primary-color),
         rgb(3, 93, 145)
       );
-      transition: all 0.4s;
+      font-size: 2.2rem;
+      display: flex;
+      justify-content: center;
       -webkit-background-clip: text;
       color: transparent;
-      font-size: 1.8rem;
 
       @include change(tab-land) {
-        font-size: 2.2rem;
+        font-size: 3.2rem;
       }
       @include change(tab-port) {
-        font-size: 2.2rem;
+        font-size: 3.2rem;
       }
       @include change(phone) {
-        font-size: 2.8rem;
-      }
-
-      &:hover {
-        color: var(--light-color);
+        font-size: 3.2rem;
       }
     }
   }
 
   &-main {
-    margin-top: 4rem;
-    display: flex;
-    justify-content: space-around;
-
-    @include change(phone) {
-      flex-direction: column;
-      justify-content: space-between;
-      width: 50%;
-    }
-
     &-project {
-      background-color: var(--light-color);
-      height: 62vh;
-      flex: 0 0 22%;
-      border-radius: 1rem;
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
       align-items: center;
+      margin-top: 2rem;
+      width: 55rem;
+      float: left;
+      height: 15rem;
+      justify-content: space-between;
+      border-radius: 1.5rem;
+      margin-left: 1rem;
+      background-color: var(--light-color);
+      &-img {
+        width: 10rem;
+        height: 7rem;
+      }
+      &-img2 {
+        width: 9rem;
+        height: 9rem;
+      }
+
+      &-details {
+        float: right;
+        width: inherit;
+        & h1 {
+          display: flex;
+          justify-content: flex-start;
+
+          @include change(phone) {
+            justify-content: center;
+          }
+        }
+        & p {
+          width: 100%;
+
+          @include change(tab-land) {
+            font-size: 1.6rem;
+          }
+          @include change(tab-port) {
+            font-size: 1.6rem;
+          }
+          @include change(phone) {
+            font-size: 1.6rem;
+            justify-content: center;
+            text-align: center;
+          }
+        }
+
+        & a {
+          text-decoration: none;
+          color: red;
+
+          @include change(phone) {
+            font-size: 1.4rem;
+            justify-content: center;
+            text-align: center;
+          }
+        }
+      }
 
       @include change(tab-land) {
-        height: inherit;
-        justify-content: space-between;
+        width: 60rem;
       }
       @include change(tab-port) {
-        height: inherit;
-        justify-content: space-between;
+        width: 60rem;
       }
       @include change(phone) {
         height: inherit;
-        justify-content: space-between;
-        flex: 0 0 100%;
+        flex-direction: column;
+        width: 40rem;
+        float: center;
+      }
+    }
 
-        margin-bottom: 3rem;
+    &-project1 {
+      display: flex;
+      align-items: center;
+      margin-top: 2rem;
+      margin-right: 1rem;
+      width: 55rem;
+      float: right;
+      height: 15rem;
+      justify-content: flex-end;
+      border-radius: 2rem;
+      background-color: var(--light-color);
+
+      &-img {
+        width: 10rem;
+        height: 10rem;
       }
 
-      &-logo {
-        margin-top: 1rem;
-        height: 4rem;
-        border-radius: 50%;
-      }
+      &-details {
+        float: right;
+        width: inherit;
+        & h1 {
+          display: flex;
+          justify-content: flex-end;
 
-      &-name {
-        font-size: 0.8rem;
-        font-weight: 400;
-        color: var(--dark-color);
-        font-weight: 700;
-        text-transform: uppercase;
-
-        @include change(tab-land) {
-          font-size: 1.7rem;
-          margin-top: 2rem;
+          @include change(phone) {
+            justify-content: center;
+          }
         }
-        @include change(tab-port) {
-          font-size: 1.7rem;
-          margin-top: 2rem;
-        }
-      }
-      &-description {
-        margin-left: 1rem;
-        height: 20vh;
-        justify-content: flex-start;
-        padding-bottom: 2rem;
-
-        @include change(tab-land) {
-          font-size: 1.5rem;
-          height: inherit;
-          margin-top: 2rem;
-        }
-        @include change(tab-port) {
-          font-size: 1.6rem;
-          height: inherit;
-          margin-top: 2rem;
-        }
-      }
-
-      &-linkarea {
-        padding-bottom: 2rem;
-        &-image {
-          height: 1rem;
-          width: 1rem;
-          margin-left: 1rem;
-          color: var(--dark-color);
-          fill: currentColor;
+        & p {
+          width: 100%;
+          display: flex;
+          text-align: right;
+          justify-content: flex-end;
 
           @include change(tab-land) {
-            height: 1.5rem;
-            width: 1.5rem;
-            margin-top: 2rem;
+            font-size: 1.2rem;
           }
           @include change(tab-port) {
-            height: 1.5rem;
-            width: 1.5rem;
-            margin-top: 2rem;
+            font-size: 1.2rem;
+          }
+          @include change(phone) {
+            font-size: 1.2rem;
+            justify-content: center;
+            text-align: center;
           }
         }
-        &-link {
-          margin-top: 2rem;
-          font-size: 1rem;
-          margin-right: 7rem;
+
+        & a {
+          padding-top: 1rem;
           text-decoration: none;
-          color: var(--dark-color);
+          display: flex;
+          justify-content: flex-end;
+          color: red;
 
-          @include change(tab-land) {
-            font-size: 1.5rem;
-            margin-left: 1rem;
-          }
-
-          @include change(tab-port) {
-            font-size: 1.5rem;
-            margin-left: 1rem;
+          @include change(phone) {
+            font-size: 1.2rem;
+            justify-content: center;
+            text-align: center;
           }
         }
+      }
+
+      @include change(tab-land) {
+        width: 60rem;
+      }
+      @include change(tab-port) {
+        width: 60rem;
+      }
+      @include change(phone) {
+        height: inherit;
+        flex-direction: column;
+        width: 40rem;
+        float: "";
       }
     }
   }

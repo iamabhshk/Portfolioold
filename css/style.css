@@ -1,3 +1,16 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+  @media only screen and (max-width: 1200px) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 900px) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 1800px) {
+    html {
+      font-size: 75%; } }
+
 .header {
   position: fixed;
   width: 100%;
@@ -589,8 +602,7 @@
 .fourthPage {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  height: 100vh;
+  height: 170vh;
   background-color: var(--dark-color); }
   @media only screen and (max-width: 1200px) {
     .fourthPage {
@@ -600,123 +612,147 @@
       height: inherit; } }
   @media only screen and (max-width: 600px) {
     .fourthPage {
-      height: inherit; } }
+      height: inherit;
+      flex-direction: column; } }
   .fourthPage-heading {
     margin-top: 4rem; }
     .fourthPage-heading-title {
       background-image: linear-gradient(to right bottom, var(--primary-color), #035d91);
-      transition: all 0.4s;
-      -webkit-background-clip: text;
-      color: transparent;
-      font-size: 1.8rem; }
-      @media only screen and (max-width: 1200px) {
-        .fourthPage-heading-title {
-          font-size: 2.2rem; } }
-      @media only screen and (max-width: 900px) {
-        .fourthPage-heading-title {
-          font-size: 2.2rem; } }
-      @media only screen and (max-width: 600px) {
-        .fourthPage-heading-title {
-          font-size: 2.8rem; } }
-      .fourthPage-heading-title:hover {
-        color: var(--light-color); }
-  .fourthPage-main {
-    margin-top: 4rem;
-    display: flex;
-    justify-content: space-around; }
-    @media only screen and (max-width: 600px) {
-      .fourthPage-main {
-        flex-direction: column;
-        justify-content: space-between;
-        width: 50%; } }
-    .fourthPage-main-project {
-      background-color: var(--light-color);
-      height: 62vh;
-      flex: 0 0 22%;
-      border-radius: 1rem;
+      font-size: 2.2rem;
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center; }
+      justify-content: center;
+      -webkit-background-clip: text;
+      color: transparent; }
       @media only screen and (max-width: 1200px) {
-        .fourthPage-main-project {
-          height: inherit;
-          justify-content: space-between; } }
+        .fourthPage-heading-title {
+          font-size: 3.2rem; } }
       @media only screen and (max-width: 900px) {
-        .fourthPage-main-project {
-          height: inherit;
-          justify-content: space-between; } }
+        .fourthPage-heading-title {
+          font-size: 3.2rem; } }
       @media only screen and (max-width: 600px) {
-        .fourthPage-main-project {
-          height: inherit;
-          justify-content: space-between;
-          flex: 0 0 100%;
-          margin-bottom: 3rem; } }
-      .fourthPage-main-project-logo {
-        margin-top: 1rem;
-        height: 4rem;
-        border-radius: 50%; }
-      .fourthPage-main-project-name {
-        font-size: 0.8rem;
-        font-weight: 400;
-        color: var(--dark-color);
-        font-weight: 700;
-        text-transform: uppercase; }
+        .fourthPage-heading-title {
+          font-size: 3.2rem; } }
+  .fourthPage-main-project {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    width: 55rem;
+    float: left;
+    height: 15rem;
+    justify-content: space-between;
+    border-radius: 1.5rem;
+    margin-left: 1rem;
+    background-color: var(--light-color); }
+    .fourthPage-main-project-img {
+      width: 10rem;
+      height: 7rem; }
+    .fourthPage-main-project-img2 {
+      width: 9rem;
+      height: 9rem; }
+    .fourthPage-main-project-details {
+      float: right;
+      width: inherit; }
+      .fourthPage-main-project-details h1 {
+        display: flex;
+        justify-content: flex-start; }
+        @media only screen and (max-width: 600px) {
+          .fourthPage-main-project-details h1 {
+            justify-content: center; } }
+      .fourthPage-main-project-details p {
+        width: 100%; }
         @media only screen and (max-width: 1200px) {
-          .fourthPage-main-project-name {
-            font-size: 1.7rem;
-            margin-top: 2rem; } }
+          .fourthPage-main-project-details p {
+            font-size: 1.6rem; } }
         @media only screen and (max-width: 900px) {
-          .fourthPage-main-project-name {
-            font-size: 1.7rem;
-            margin-top: 2rem; } }
-      .fourthPage-main-project-description {
-        margin-left: 1rem;
-        height: 20vh;
-        justify-content: flex-start;
-        padding-bottom: 2rem; }
-        @media only screen and (max-width: 1200px) {
-          .fourthPage-main-project-description {
-            font-size: 1.5rem;
-            height: inherit;
-            margin-top: 2rem; } }
-        @media only screen and (max-width: 900px) {
-          .fourthPage-main-project-description {
+          .fourthPage-main-project-details p {
+            font-size: 1.6rem; } }
+        @media only screen and (max-width: 600px) {
+          .fourthPage-main-project-details p {
             font-size: 1.6rem;
-            height: inherit;
-            margin-top: 2rem; } }
-      .fourthPage-main-project-linkarea {
-        padding-bottom: 2rem; }
-        .fourthPage-main-project-linkarea-image {
-          height: 1rem;
-          width: 1rem;
-          margin-left: 1rem;
-          color: var(--dark-color);
-          fill: currentColor; }
-          @media only screen and (max-width: 1200px) {
-            .fourthPage-main-project-linkarea-image {
-              height: 1.5rem;
-              width: 1.5rem;
-              margin-top: 2rem; } }
-          @media only screen and (max-width: 900px) {
-            .fourthPage-main-project-linkarea-image {
-              height: 1.5rem;
-              width: 1.5rem;
-              margin-top: 2rem; } }
-        .fourthPage-main-project-linkarea-link {
-          margin-top: 2rem;
-          font-size: 1rem;
-          margin-right: 7rem;
-          text-decoration: none;
-          color: var(--dark-color); }
-          @media only screen and (max-width: 1200px) {
-            .fourthPage-main-project-linkarea-link {
-              font-size: 1.5rem;
-              margin-left: 1rem; } }
-          @media only screen and (max-width: 900px) {
-            .fourthPage-main-project-linkarea-link {
-              font-size: 1.5rem;
-              margin-left: 1rem; } }
+            justify-content: center;
+            text-align: center; } }
+      .fourthPage-main-project-details a {
+        text-decoration: none;
+        color: red; }
+        @media only screen and (max-width: 600px) {
+          .fourthPage-main-project-details a {
+            font-size: 1.4rem;
+            justify-content: center;
+            text-align: center; } }
+    @media only screen and (max-width: 1200px) {
+      .fourthPage-main-project {
+        width: 60rem; } }
+    @media only screen and (max-width: 900px) {
+      .fourthPage-main-project {
+        width: 60rem; } }
+    @media only screen and (max-width: 600px) {
+      .fourthPage-main-project {
+        height: inherit;
+        flex-direction: column;
+        width: 40rem;
+        float: center; } }
+  .fourthPage-main-project1 {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    width: 55rem;
+    float: right;
+    height: 15rem;
+    justify-content: flex-end;
+    border-radius: 2rem;
+    background-color: var(--light-color); }
+    .fourthPage-main-project1-img {
+      width: 10rem;
+      height: 10rem; }
+    .fourthPage-main-project1-details {
+      float: right;
+      width: inherit; }
+      .fourthPage-main-project1-details h1 {
+        display: flex;
+        justify-content: flex-end; }
+        @media only screen and (max-width: 600px) {
+          .fourthPage-main-project1-details h1 {
+            justify-content: center; } }
+      .fourthPage-main-project1-details p {
+        width: 100%;
+        display: flex;
+        text-align: right;
+        justify-content: flex-end; }
+        @media only screen and (max-width: 1200px) {
+          .fourthPage-main-project1-details p {
+            font-size: 1.2rem; } }
+        @media only screen and (max-width: 900px) {
+          .fourthPage-main-project1-details p {
+            font-size: 1.2rem; } }
+        @media only screen and (max-width: 600px) {
+          .fourthPage-main-project1-details p {
+            font-size: 1.2rem;
+            justify-content: center;
+            text-align: center; } }
+      .fourthPage-main-project1-details a {
+        padding-top: 1rem;
+        text-decoration: none;
+        display: flex;
+        justify-content: flex-end;
+        color: red; }
+        @media only screen and (max-width: 600px) {
+          .fourthPage-main-project1-details a {
+            font-size: 1.2rem;
+            justify-content: center;
+            text-align: center; } }
+    @media only screen and (max-width: 1200px) {
+      .fourthPage-main-project1 {
+        width: 60rem; } }
+    @media only screen and (max-width: 900px) {
+      .fourthPage-main-project1 {
+        width: 60rem; } }
+    @media only screen and (max-width: 600px) {
+      .fourthPage-main-project1 {
+        height: inherit;
+        flex-direction: column;
+        width: 40rem;
+        float: ""; } }
 
 .btn {
   background-image: linear-gradient(to right bottom, var(--primary-color), #035d91);
