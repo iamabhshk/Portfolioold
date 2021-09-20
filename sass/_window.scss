@@ -381,9 +381,11 @@ html {
   display: flex;
   background-color: var(--light-color);
   overflow: hidden;
+  height: 130vh;
 
   @include change(phone) {
     flex-direction: column;
+    height: inherit;
   }
 
   &-about {
