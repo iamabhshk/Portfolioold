@@ -604,7 +604,7 @@ html {
 .fourthPage {
   display: flex;
   flex-direction: column;
-  height: 170vh;
+  height: 212vh;
   background-color: var(--dark-color); }
   @media only screen and (max-width: 1200px) {
     .fourthPage {
@@ -620,11 +620,11 @@ html {
     margin-top: 4rem; }
     .fourthPage-heading-title {
       background-image: linear-gradient(to right bottom, var(--primary-color), #035d91);
+      -webkit-background-clip: text;
+      color: transparent;
       font-size: 2.2rem;
       display: flex;
-      justify-content: center;
-      -webkit-background-clip: text;
-      color: transparent; }
+      justify-content: center; }
       @media only screen and (max-width: 1200px) {
         .fourthPage-heading-title {
           font-size: 3.2rem; } }
@@ -675,7 +675,11 @@ html {
             text-align: center; } }
       .fourthPage-main-project-details a {
         text-decoration: none;
-        color: red; }
+        background-image: linear-gradient(to right bottom, var(--primary-color), #010e16);
+        -webkit-background-clip: text;
+        color: transparent; }
+        .fourthPage-main-project-details a:hover {
+          color: red; }
         @media only screen and (max-width: 600px) {
           .fourthPage-main-project-details a {
             font-size: 1.4rem;
@@ -707,6 +711,9 @@ html {
     .fourthPage-main-project1-img {
       width: 10rem;
       height: 10rem; }
+    .fourthPage-main-project1-img3 {
+      width: 8rem;
+      height: 8rem; }
     .fourthPage-main-project1-details {
       float: right;
       width: inherit; }
@@ -737,7 +744,11 @@ html {
         text-decoration: none;
         display: flex;
         justify-content: flex-end;
-        color: red; }
+        background-image: linear-gradient(to right bottom, var(--primary-color), #010e16);
+        -webkit-background-clip: text;
+        color: transparent; }
+        .fourthPage-main-project1-details a:hover {
+          color: red; }
         @media only screen and (max-width: 600px) {
           .fourthPage-main-project1-details a {
             font-size: 1.2rem;

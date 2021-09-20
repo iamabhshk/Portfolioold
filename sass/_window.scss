@@ -869,7 +869,7 @@ html {
 .fourthPage {
   display: flex;
   flex-direction: column;
-  height: 170vh;
+  height: 212vh;
   background-color: var(--dark-color);
 
   @include change(tab-land) {
@@ -892,11 +892,11 @@ html {
         var(--primary-color),
         rgb(3, 93, 145)
       );
+      -webkit-background-clip: text;
+      color: transparent;
       font-size: 2.2rem;
       display: flex;
       justify-content: center;
-      -webkit-background-clip: text;
-      color: transparent;
 
       @include change(tab-land) {
         font-size: 3.2rem;
@@ -960,7 +960,17 @@ html {
 
         & a {
           text-decoration: none;
-          color: red;
+          background-image: linear-gradient(
+            to right bottom,
+            var(--primary-color),
+            rgb(1, 14, 22)
+          );
+          -webkit-background-clip: text;
+          color: transparent;
+
+          &:hover {
+            color: red;
+          }
 
           @include change(phone) {
             font-size: 1.4rem;
@@ -1000,6 +1010,10 @@ html {
         width: 10rem;
         height: 10rem;
       }
+      &-img3 {
+        width: 8rem;
+        height: 8rem;
+      }
 
       &-details {
         float: right;
@@ -1036,7 +1050,17 @@ html {
           text-decoration: none;
           display: flex;
           justify-content: flex-end;
-          color: red;
+          background-image: linear-gradient(
+            to right bottom,
+            var(--primary-color),
+            rgb(1, 14, 22)
+          );
+          -webkit-background-clip: text;
+          color: transparent;
+
+          &:hover {
+            color: red;
+          }
 
           @include change(phone) {
             font-size: 1.2rem;
